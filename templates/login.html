@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            login page - demo
+        </title>
+    </head>
+    <form  action="login.py" method="post" name="f1">
+        <div class="box">
+            <label for="username">
+                ENTER USERNAME 
+            </label>
+            <input type="text" id="username" name="username" placeholder="USERNAME" required><br><br>
+            <label for="password">
+                ENTER PASSWORD 
+            </label>
+            <input type="password" id="password" name="password" placeholder="PASSWORD" required><br><br>
+            <button type="submit" id="login" >
+               Sign in 
+            </button><br>
+            <div class="box" >
+                <button type="button" class="cancel">
+             Cancel
+            </button>
+        </div>
+    </form>
+    <style >
+        .form{
+            text-align: center;
+            border: 5px;
+        }
+    </style>
+    <script>
+        var connection = mysql.createConnection( {
+            host : 'MSI',
+            username : 'root',
+            password : ' ',
+            database : 'project1'
+        } );
+    </script>
+  
+</html>
